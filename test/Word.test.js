@@ -31,8 +31,8 @@ describe("Word class", () => {
     });
     it("returns false if at least one letter is incorrect", () => {
       const word = new Word("hi");
-      word.guessLetter("h");
-      word.guessLetter("a");
+      word.guessLetter("h"); //true
+      word.guessLetter("a"); //false
       expect(word.guessedCorrectly()).toBe(false);
     });
   });
